@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="scope",
+    name="elastic",
     version="0.1",
-    packages=["scope"],
+    packages=["elastic"],
 )

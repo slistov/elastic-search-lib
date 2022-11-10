@@ -1,6 +1,8 @@
 .venv/
 __pycache__/
 scope.egg-info/
+.vscode/
+.pytest_cache/
 *.tar
 *.gz
 .env
