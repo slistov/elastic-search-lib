@@ -1,8 +1,9 @@
 .venv/
 __pycache__/
-scope.egg-info/
+*.egg-info/
 .vscode/
 .pytest_cache/
 *.tar
 *.gz
 .env
+*.egg-info/

@@ -41,7 +41,7 @@ class ElasticIndexRepository(ElasticIndexRepositoryAbstract):
         self.elasticsearch = elasticsearch
 
     async def _add(self, index: model.Index):
-        await self.elasticsearch.indices.create(index=index.index_name, mappings=index.mappings)
+        await self.elasticsearch.indices.create(index=index.index_name, mappings=index.mappings, settings=index.settings)
     
     async def _get_index_by_name(self, index_name) -> model.Index:
         return await self.elasticsearch.indices.get(index=index_name)

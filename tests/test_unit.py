@@ -1,4 +1,4 @@
-from scope.domain import model
+from elastic.domain import model
 from typing import Dict, Any
 
 class FakeElasticSearch:

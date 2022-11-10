@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "scope.entrypoints.fastapi_app:app"
+                "elastic.entrypoints.fastapi_app:app"
             ],
             "jinja": true,
             "justMyCode": true

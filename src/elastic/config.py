@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import yaml
-config = yaml.safe_load(open("config.yaml", mode="r", encoding="utf-8"))
+config = yaml.safe_load(open("src/elastic/config.yaml", mode="r", encoding="utf-8"))
 
 
 def get_es_uri():
