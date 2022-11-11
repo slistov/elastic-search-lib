@@ -9,10 +9,10 @@ class ElasticProvider:
     def __init__(self, es: AsyncElasticsearch) -> None:
         self.__es = es
 
-    async def search(self, text_to_search, index = 'index-quote'):
+    async def search(self, text, index = 'index-quote'):
         query = {
             "multi_match": {
-                "query": text_to_search,
+                "query": text,
                 "fields": ["quote", "movie", "speaker"],
                 "type" : "phrase_prefix"                
             }            
