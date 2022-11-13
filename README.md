@@ -1,4 +1,6 @@
+Библиотека elastic-search-lib
 
+Обеспечивает поиск по индексам elasticsearch
 
 ### Установка
 - clone

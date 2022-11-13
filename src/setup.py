@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="elastic",
+    name="elastic-search-lib",
     version="0.1",
-    packages=["elastic"],
+    packages=["elastic_search_lib"],
 )
