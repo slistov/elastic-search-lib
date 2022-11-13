@@ -13,8 +13,7 @@ class ElasticProvider:
         query = {
             "multi_match": {
                 "query": text,
-                "fields": ["quote", "movie", "speaker"],
-                "type" : "phrase_prefix"                
+                "fields": ["quote^3", "movie^2", "speaker^2", "stuff*"],
             }            
         }
         response = await self.__es.search(index=index, query=query)
