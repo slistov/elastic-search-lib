@@ -1,15 +1,17 @@
 import pytest
-from elastic_search_lib.domain import model
-from typing import Dict
+from conftest import ep
 
 
 class TestElasticProvider:
     @pytest.mark.asyncio
-    async def test_get(self, ep):
-        assert await ep.get_index_by_name(index='test_index')
+    async def test_get(self):
+        ep_async = await ep()
+        assert await ep_async.get_index_by_name(index='test_index')
+        assert not await ep_async.get_index_by_name(index='wrong_test_index')        
     
     @pytest.mark.asyncio
-    async def test_search(self, ep):
-        assert await ep.search(index='test_index', text='va')
+    async def test_search(self):
+        ep_async = await ep()
+        assert await ep_async.search(index='test_index', text='va', fields=["doc_field1", "doc_field2"])
 
 
