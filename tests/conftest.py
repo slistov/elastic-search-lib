@@ -3,7 +3,7 @@ from typing import Dict
 
 import pytest
 
-from elastic_search_lib.service_layer.services import ElasticProvider
+from ..elastic_search_lib.service_layer.services import ElasticProvider
 
 
 class FakeAsyncElasticSearch:
