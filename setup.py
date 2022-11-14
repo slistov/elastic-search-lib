@@ -1,17 +1,11 @@
 from setuptools import setup
 
-setup(
-    name="elastic-search-lib",
-    version="0.1",
-    packages=["elastic_search_lib"],
-)
-
 with open("README.md") as file:
     read_me_description = file.read()
 
 setup(
     name="elastic-search-lib",
-    version="0.1.1",
+    version="0.1.2",
     author="Sergey Listov",
     author_email="slistov@mail.ru",
     description="Elastic search library",
