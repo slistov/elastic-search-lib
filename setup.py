@@ -5,7 +5,7 @@ with open("README.md") as file:
 
 setup(
     name="elastic-search-lib",
-    version="0.1.4",
+    version="0.1.5",
     author="Sergey Listov",
     author_email="slistov@mail.ru",
     description="Elastic search library",
