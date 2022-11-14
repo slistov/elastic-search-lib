@@ -3,8 +3,6 @@ from typing import List
 from elasticsearch import AsyncElasticsearch, NotFoundError
 from elasticsearch.helpers import async_bulk
 
-from ..domain import model
-
 
 class ElasticProvider:
     __es: AsyncElasticsearch
@@ -14,7 +12,7 @@ class ElasticProvider:
     async def add_index(self, index, mappings, settings):
         await self.__es.indices.create(index=index, mappings=mappings, settings=settings)
     
-    async def get_index_by_name(self, index) -> model.Index:
+    async def get_index_by_name(self, index):
         return await self.__es.indices.get(index)
     
     async def add_docs_bulk(self, index, docs_bulk):
