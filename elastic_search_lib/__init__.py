@@ -1,1 +1,1 @@
-from service_layer.services import ElasticProvider
+from .service_layer.services import ElasticProvider
