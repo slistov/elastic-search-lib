@@ -1,6 +1,8 @@
 import pytest
 from conftest import ep
 
+from elastic_search_lib import 
+
 
 class TestElasticProvider:
     @pytest.mark.asyncio
