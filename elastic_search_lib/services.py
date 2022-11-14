@@ -13,7 +13,7 @@ class ElasticProvider:
         await self.__es.indices.create(index=index, mappings=mappings, settings=settings)
     
     async def get_index_by_name(self, index):
-        return await self.__es.indices.get(index)
+        return await self.__es.indices.get(index=index)
     
     async def add_docs_bulk(self, index, docs_bulk):
         try:
