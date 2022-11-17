@@ -16,8 +16,7 @@ class ElasticProvider:
     ) -> None:
         self.__es = AsyncElasticsearch(
             elastic_uri,
-            username=username,
-            password=password,
+            basic_auth=(username, password),
             verify_certs=verify_certs
         )
 
