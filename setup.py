@@ -5,7 +5,7 @@ with open("README.md") as file:
 
 setup(
     name="elastic-search-lib",
-    version="0.1.13",
+    version="0.1.14",
     author="Sergey Listov",
     author_email="slistov@mail.ru",
     description="Elastic search library",
@@ -13,6 +13,11 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/slistov/elastic-search-lib.git",
     packages=['elastic_search_lib'],
+    install_requires=[
+        'elasticsearch[async]==8.4.3',
+        'pytest',
+        'pytest-asyncio'
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
