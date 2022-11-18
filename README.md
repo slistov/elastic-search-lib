@@ -1,7 +1,8 @@
-Библиотека elastic-search-lib
+# Библиотека elastic-search-lib
 
 Обеспечивает поиск по индексам elasticsearch
 
-### Установка
+## Установка
+
 - clone
 - pip install -e ./src
